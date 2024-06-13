@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  padding-top: 4rem;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.navbar h4 {
+  margin-left: 2rem;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 4rem;
+}
+
+.search-container .glass {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: black;
+}
+.search-container input {
+  padding-left: 30px;
+  width: 200px;
+}
+
+.search-container .fa-bell {
+  font-size: 1.5em; /* Size of the notification icon */
+  margin-left: 20px; /* Space between the search bar and the notification icon */
+  color: #aaa;
+}
+.search-container > div {
+  position: relative;
+}
+
+.search-container .rounded-circle {
+  margin-left: 20px;
+}
+
+.search-container .name {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.search-container .name .main-name {
+  margin: 0; /* Remove default margin */
+}
+
+.search-container .name .admin {
+  display: block; /* Ensures it takes up its own line */
+  margin-top: -2px; /* Adjust the top margin to create the gap */
+  font-weight: 100;
+}
+
+.search-container .dropdown {
+  margin-left: 10px;
+}
+
+/*Sidebar*/
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  padding: 20px;
+  width: 250px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ebebeb;
+}
+
+.sidebar-container .menu {
+  list-style-type: none;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  margin-bottom: 20px; /* Add margin to separate from menu */
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details {
+  font-size: 12px;
+  text-align: center; /* Center text */
+  margin-top: 8px;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #000; /* Adjust this color as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  border-radius: 15px;
+  width: 14rem;
+}
+
+.custom-button i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.custom-button:hover {
+  background-color: #098a49; /* Hover background color */
+  color: #ffffff; /* Hover text color */
+}
+
+.list {
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+}
