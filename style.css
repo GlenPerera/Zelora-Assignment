@@ -4,13 +4,16 @@ body {
 }
 
 .navbar {
-  font-family: "Poppins", sans-serif;
-  background-color: #f4f4f4;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
   display: flex;
-  padding-left: 2rem;
-  padding-right: 4rem;
-  padding-top: 4rem;
-  border-bottom: 1px solid #d3d3d3;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Adjust padding as needed */
+  z-index: 1000; /* Ensure it's above other content */
 }
 
 .navbar h4 {
@@ -85,10 +88,10 @@ main {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  height: 90vh;
-  padding: 30px;
+  height: 100vh;
+  padding-top: 100px;
   width: 250px;
-  background-color: #f8f9fa;
+  background-color: #fff;
   border-right: 1px solid #ebebeb;
 }
 
@@ -151,8 +154,8 @@ main {
 .herosection {
   flex-grow: 1;
   padding: 80px;
-  padding-top: 60px;
-  background-color: #ffffff46;
+  padding-top: 130px;
+  background-color: #f2f2f2;
   overflow-y: auto;
   margin-left: 200px; /* Adjust to the width of the sidebar */
 }
@@ -223,4 +226,66 @@ body {
 .icon-large {
   font-size: 1.5rem; /* Adjust the size as needed */
   margin-top: -18px;
+}
+
+.table-section {
+  margin-top: 2rem;
+  background-color: white;
+  height: 100vh;
+  border-radius: 5px;
+}
+
+/*Table header Styles*/
+
+.table-nav {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-left: 6px;
+}
+
+.service-dates {
+  display: flex;
+  gap: 2rem;
+  margin-right: -40px;
+}
+
+.service-dates .service {
+  height: 2rem;
+}
+.service-dates .dropdown-toggle {
+  border: 0.5px solid rgb(105, 105, 105);
+}
+
+/*Container for input field*/
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 2rem;
+  margin-top: 4px;
+}
+
+.search-box {
+  margin-top: 4px;
+  margin-left: auto;
+}
+/* Input field */
+.input-field {
+  flex: 1; /* Take remaining width */
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Icon */
+.icon {
+  padding: 8px;
+  font-size: 20px; /* Adjust icon size */
+  color: #666; /* Icon color */
 }
